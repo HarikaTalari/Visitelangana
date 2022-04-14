@@ -1,0 +1,732 @@
+<html>
+
+<head>
+    <title>Visitelangana</title>
+
+    <style>
+        .page {
+            width: 1340px;
+            height: 3950px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .linkspart {
+            width: 1340px;
+            height: 50px;
+            border-style: hidden;
+            background-color: transparent;
+        }
+        
+        .linkspart a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: white;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+        
+        .linkspart a:hover {
+            text-decoration: underline;
+        }
+        
+        .bgimg {
+            width: 1340px;
+            height: 600px;
+            background-image: url(background1.jpg);
+            background-repeat: no-repeat;
+            background-size: 1340px 620px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 90px;
+        }
+        
+        .body {
+            width: 1340px;
+            height: 1250px;
+            margin-top: 580px;
+            color: var(--primary-color);
+        }
+        
+        .charminar {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 150px;
+            background-image: url(charminar.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .charinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .golconda {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(GOLCONDA.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .golinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .more {
+            width: 600px;
+            height: 30px;
+            float: right;
+        }
+        
+        .hussain {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(Hussain\ sagar.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .hussaininfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .pillar {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(pillar.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .pillarinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .park {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(park.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .parkinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .link {
+            text-decoration: none;
+            margin-left: 90px;
+            color: white;
+        }
+        
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: white;
+        }
+        
+        #login-form {
+            display: none;
+        }
+        
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 0.8% 480px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 5px 5px #333ff3;
+            border-radius: 30px;
+        }
+        
+        .toggle-btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+        
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient( blue, #333ff3);
+            border-radius: 30px;
+            transition: .5s;
+        }
+        
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient( blue, #333ff3);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+        }
+        
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+        
+        span {
+            color: #777;
+            font-size: 15px;
+            bottom: 68px;
+            position: absolute;
+        }
+        
+        #login {
+            left: 50px;
+        }
+        
+        #login input {
+            color: white;
+            font-size: 15;
+        }
+        
+        #register {
+            left: 450px;
+        }
+        
+        #register input {
+            color: white;
+            font-size: 15;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .eye {
+            cursor: pointer;
+            color: #999;
+            font-size: 20px;
+            margin-bottom: 58px;
+            margin-left: -20px;
+            position: absolute;
+        }
+        
+        #hide1 {
+            display: none;
+        }
+        
+        .error-text {
+            color: red;
+            display: none;
+        }
+        
+        .wrong {
+            color: red;
+            margin-left: 30px;
+            margin-bottom: -30px;
+            display: none;
+        }
+        
+        .messages {
+            color: red;
+            display: none;
+        }
+        
+        .palace {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(palace.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .palaceinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .birla {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(Birla\ Mandir.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .birlainfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .wonder {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(wonderla.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .wonderinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+      
+        
+     
+        
+        .falls {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(falls.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .fallsinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .kbr {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(kbr.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .kbrinfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .museum {
+            width: 1100px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-image: url(museum.jpg);
+            background-repeat: no-repeat;
+            background-size: 450px 280px;
+        }
+        
+        .museuminfo {
+            width: 600px;
+            height: 240px;
+            float: right;
+            margin-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            overflow-y: scroll;
+            color: var(--secondary-color);
+        }
+        
+        .viewmore {
+            width: 100px;
+            height: 40px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-right: 100px;
+            background: blue;
+            border-radius: 15px;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            border-style: hidden;
+            margin-top: 10px;
+            float: right;
+        }
+        
+        .viewmore:hover {
+            color: blue;
+            background-color: white;
+            border: blue;
+            border-style: groove;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+        
+        .title {
+            margin-top: 160px;
+            color: white;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 45px;
+            margin-right: 40px;
+        }
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="linkspart">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <a href="#">HOME</a>
+
+
+
+            <div class="bgimg ">
+                <h2 class="title">
+                    Adventure awaits, go find it 😇
+                </h2>
+
+
+            </div>
+
+
+        </div>
+
+    
+
+
+        <div class="body ">
+            <div class="charminar ">
+
+                <div class="charinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon1.png " width="20px " height="20px "><b> Historical | </b><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon2.png " width="20px " height="20px "><b> City</b></p>
+                    <h2><b>Charminar </b> <i> "The city of Nizams "</i></h2>
+                    <p>Hyderabad(also known as Bhagya Nagaram) is the fifth largest metropolis of India and the capital of Telangana. It is known for its rich history and culture with monuments, mosques, temples, a rich and varied heritage in arts, crafts
+                        and dance. Also known as The City of Nizams and The City of Pearls, Hyderabad is today one of the fast developing cities in the country and a modern hub of IT, ITES, and Biotechnology. Hyderabad is often referred to the twin cities
+                        of Hyderabad and Secunderabad together which are commonly referred as a single city.</p>
+                    <p>Muhammad Quli Qutb Shah, a ruler of the Qutb Shahi dynasty (the ruling family of the Golconda - previously a feudatory of Bahmani sultanate that declared independence in 1512) founded the city of Hyderabad on the banks of the Musi
+                        River in 1591. The Mughal emperor Aurangzeb captured Hyderabad in 1687, but the Mughal-appointed governors of the city soon gained autonomy. In 1724, Asaf Jah I, who was granted the title Nizam-ul-Mulk ('Governor of the country')
+                        by the Mughal emperor, defeated a rival official to establish control over Hyderabad. Asaf Jah's successors ruled as the Nizams of Hyderabad. The rule of the seven Nizams saw the growth of Hyderabad both culturally and economically.
+                        Hyderabad is the financial and economic capital of the state of Andhra Pradesh.</p>
+                    <p>Hyderabad is known as the city of pearls, lakes and, lately, for its IT companies.</p>
+
+                </div>
+                <div class="more " id="char ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Charminar/charminar.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="golconda ">
+                <div class="golinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon1.png " width="20px " height="20px "><b> Historical | </b><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon2.png " width="20px " height="20px "><b> City</b></p>
+                    </p>
+                    <h2><b>Golconda Fort</b></h2>
+                    <p>Golconda Fort Hyderabad is an outstanding example of brilliant engineering and magical architecture. Located at a distance of 11km from the city, it is the most famous of all Hyderabad tourist places. The name of the fort has been
+                        derived from the Telugu words "Golla " and "Konda " which together means 'Shepherd's Hill'.</p>
+                    <p>Golconda Fort is located in the western part of Hyderabad city and is about 9 km from the Hussain Sagar Lake. The outer fort occupies an area of three square kilometers, which is 4.8 kilometers in length.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Golconda/golconda.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="hussain ">
+                <div class="hussaininfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/lake.png " width="20px " height="20px "><b> Lake | </b><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/nature.png " width="20px " height="20px "><b> Nature </b></p>
+                    </p>
+                    <h2><b>Hussain Sagar</b></h2>
+                    <p>Renowned as Asia's largest artificial lake, Hussain Sagar Lake is one of the most popular tourist attractions located in Hyderabad. The lake itself was commissioned by Ibrahim Quli Qutub Shah in 1563 and is renowned for its monolith
+                        of Lord Buddha that stands right in its centre. Incidentally, this monolith structure is the tallest of its kind in the world! Hussain Sagar lake is also Called Tank Bund and lies on a tributary of River Musi. The attraction also
+                        has 3 km long dam wall and connects the twin cities of Hyderabad and Secunderabad. It is bordered by Indira Park, Sanjeevaiah Park, and Lumbini Park on 3 sides and is truly a relaxing and calming getaway from the city.</p>
+                    <p>Although the Hussain Sagar Lake is popular for activities such as fish culture, water sports and boat rides, the major attraction of the lake is a monolithic Buddha statue situated right at the heart of the lake. The statue of Buddha
+                        was installed in the year 1992 and was inaugurated by His Holiness Dalai Lama himself. Standing at the Tank Bund, you can see the whole lake shimmering around you as the lights sparkle on the shore. Thus, the road is also known
+                        as the 'Necklace Road'. Owing to its unique heart-shaped outline, the Hussain Sagar Lake has been declared as the 'Heart of the World' by the United Nations World Tourism Organization (UNWTO)</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Hussain Sagar/Hussain Sagar.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="pillar ">
+                <div class="pillarinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/Pilgrimage.png " width="20px " height="20px "><b> Pilgrimage </b></p>
+                    <h2><b>Thousand Pillar Temple<i>(Warangal)</i></b></h2>
+                    <p>The Thousand Pillar Temple or Rudreswara Swamy Temple is a historic Hindu temple located in the town of Hanamakonda, Telangana State, India. It is dedicated to Lord Shiva, Vishnu and Surya. Thousand Pillar Temple, along with Warangal
+                        Fort, Kakatiya Kala Thoranam and Ramappa Temple are added to the tentative list of World Heritage sites recognised by UNESCO.</p>
+                    <p>The temple is constructed in a star-shaped architecture, which welcomes more than 1000 devotees every day. The temple has a huge monolith Nandi that is made up of black basalt stone.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/pillar temple/Thousand Pillar Temple.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="park ">
+                <div class="parkinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/nature.png " width="20px " height="20px "><b> Nature</b></p>
+                    <h2><b>Nehru Zoological Park</b></h2>
+                    <p>Also called as Hyderabad Zoo, Nehru Zoological Park was established in the year 1959 but it was only in 1963 when it got opened for public. A must visit for animal lovers, this zoo houses around 250 species of fauna. All the animals
+                        are kept in surroundings similar to their natural atmosphere. Spanning across an area of 300 acres, it has species of Indian rhino, Bengal tiger, Indian elephant, python, panther, Asiatic lion, gaur, antelopes, deer, Himalayan
+                        Black Bear and number of birds as its inmates. A number of animals from zoo across the country have been brought here showcasing the variety of wildlife it inhabitants.</p>
+                    <p>Few added attractions for children and visitors include Natural History Museum, Toy Train, Aquarium, Butterfly Park, Jurassic Park and Children’s Park. It happens to be the first zoo that started off with the idea of Safari Park and
+                        successfully established the Lion Safari Park. This park has been extended to a Safari complex also including Bear Safari, Tiger Safari and Bison Safari. Proper eating amenities are provided for visitors including a multi-cuisine
+                        food court, canteen, dairy parlour and bakery.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Nehru park/Nehru Zoological Park.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="palace ">
+                <div class="palaceinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon1.png " width="20px " height="20px "><b> Palace</b></p>
+                    <h2><b>Chowmahalla Palace</b></h2>
+                    <p> Grandeur of rulers, glory of its past, glimpse of their enigmatic way of living, are still alive in the form of palaces like Chowmahalla Palace, a place worth visiting when on a Hyderabad tour. Built in the 18th century, almost 200
+                        years ago, the Chowmahalla Palace is one of the popular sightseeing places in Hyderabad. The literal meaning of this place is “Four Palaces” with “Chow” means four in Urdu and “Mahalat” which is the plural of “Mahalel” meaning
+                        palaces. Chowmahalla palace is said to resemble Shah Palace of Tehran in Iran. </p>
+                    <p> The construction of Chowmahalla Palace was mainly completed between 1857 to 1869 during the rule of fifth Nizam, Afzar-ud-Daulah, Asaf Jav V. However, its building is mostly credited to Nizam Salabat Jang in 1790. The Palace originally
+                        covered 45 acres which extended from the Laad Bazaar on the north to the Aspan Chowk Road on the south. Now, the total remained area of the palace is close to 12 acres. The palace was restored by the Government and was opened to
+                        the public in the year of 2005. One can visit the palace throughout the week except on Friday and national holidays.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Palace/Chowmahalla Palace.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="Birla ">
+                <div class="Birlainfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/Pilgrimage.png " width="20px " height="20px "><b> Pilgrimage</b></p>
+                    <h2><b>Birla Mandir</b></h2>
+                    <p> Birla Mandir is located towards the southern end of Hussain Sagar Lake in Hyderabad. It situated atop the Kala Pahad which is a twin hillock of Naubat Pahad. The Birlas built the Hyderabad temple in 1976 and constructed it with white
+                        marbles imported from Rajasthan. The hillock is at a height of 280-feet situated on a 13-acre plot. The construction took almost a decade to complete and was consecrated in the same year by Swami Ranganathananda of Ramakrishna
+                        Mission. Birla Foundation, known for constructing other similar temples across the country is the patron of Birla Mandir at Hyderabad too.</p>
+                    <p> The temple is dedicated to Lord Vishnu present in the form of Sri Venkateswara. One can find the kirtanas of Tyagaraja, Annamayya, and Ramadasu reverberating against the backdrop of a blue sky in the morning. The temple combines the
+                        architectural styles of Utkal (Oriya) and South Indian style.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open('C:/Users/delll/Desktop/Mini Project2/root/Birla Mandir/Birla Mandir.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="wonder ">
+                <div class="wonderinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/lake.png " width="20px " height="20px "><b> Nature</b></p>
+                    <h2><b>Wonderla</b></h2>
+                    <p> Wonderla Hyderabad has 43 unique rides for visitors to enjoy. There is a varied array of rides including dry rides, water rides, especially designed rides for children and family rides as well.For those who seek adventure and are crazy
+                        for adrenalin rush, high thrill rides are the most suitable way to spend their day at Wonderla Hyderabad.</p>
+                    <p> Wonderla Hyderabad has many interesting rides that families can try together. These family rides let you have maximum fun with your loved ones.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/wonderla/Wonderla.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            
+            <div class="falls ">
+                <div class="fallsinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/wf.png " width="20px " height="20px "><b> Waterfalls</b></p>
+                    <h2><b>Bogatha Falls</b></h2>
+                    <p> Also called the “Niagara of Telangana”, Bogatha Waterfalls is an eye pleasing and the second largest waterfall located in the state of Telangana. This is an offbeat place which proffers mesmerizing and picturesque views of the colourful
+                        and rich landscape that circumscribes it. The variegated hills from where the water bubbles and cascades down in a tortuous manner is simply beautiful. </p>
+                    <p> Falling from an elevation of 30 feet, many small gushing water streams coalesce to form a large magical pool at the bottom. The water of the Bogatha Waterfall later on merges with the Godavari river. Bogatha Waterfalls is a hidden
+                        gem that will prove to be a great getaway from the hustle bustle of the city and give you an opportunity to spend some time in the lap of nature and enjoy the pleasant sound and touch of bountiful water drops.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/Bogatha Falls/Bogatha Falls.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="kbr ">
+                <div class="kbrinfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/wild.png " width="20px " height="20px "><b> wildlife</b></p>
+                    <h2><b>KBR National Park</b></h2>
+                    <p> Kasu Brahmananda Reddy Park, popularly known as KBR National Park is a vast spread of lush greenery and rich fauna which is located in the middle of Hyderabad city- Jubilee Hills. Named after former Chief Minister Kasu Brahmananda
+                        Reddy, this park promises rejuvenating nature amid the concrete buildings and traffic of city life.</p>
+                    <p> FA popular place to visit in Hyderabad, this park, along with its picturesque beauty and rich flora and fauna, is also historically significant. Chiran Palace of former Hyderabad’s Nizam is a place worth seeing. It was established
+                        in the year of 1994 with an aim to preserve the nature of this area. One of the popular tourist places, KBR Park is a must visit when on a Hyderabad Tour.
+
+                    </p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/KBR park/KBR National Park.html', '_blank') ">View more</button>
+                </div>
+            </div>
+            <div class="museum ">
+                <div class="museuminfo ">
+                    <p style="color: rgb(221, 88, 0); "><img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/icon1.png " width="20px " height="20px "><b> museum</b></p>
+                    <h2><b>Salar Jung Museum</b></h2>
+                    <p> Popularly known for its one of the largest one-man collection of the world, Salar Jung Museum is one of the most famous Hyderabad sightseeing places that must be visited. What makes Salar Jung Museum all the more special is its location.
+                        It is located quite close to the other tourist spots of Hyderabad such as Charminar, Mecca Masjid, High Court, State Central Library, etc.</p>
+                    <p> The museum has often appeared in print and electronic media for not only its collection but because of its efforts to preserve the history through digitalization and various latest means. With a magnificent building that paves way
+                        into a rich history from all over the world, Salar Jung Museum is a place that no art lover or a history enthusiasts can miss. It is nothing less than a treasure house that values and respects the unparalleled feat that Europeans,
+                        Asians and eastern countries have achieved in varied fields, ranging from art to science and literature.</p>
+                </div>
+                <div class="more ">
+                    <button type="button " class="viewmore " onclick="window.open( 'C:/Users/delll/Desktop/Mini Project2/root/museum/Salar Jung Museum.html', '_blank') ">View more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

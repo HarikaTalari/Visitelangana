@@ -1,0 +1,344 @@
+<html>
+
+<head>
+    <title>Charminar</title>
+    <style>
+        .page {
+            width: 1340px;
+            height: 2160px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .head {
+            width: 1340px;
+            height: 180px;
+            border-style: hidden;
+            background-repeat: no-repeat;
+            background-size: 500px 180px;
+        }
+        
+        .head a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        
+        .head a:hover {
+            color: blue;
+        }
+        
+        .slides {
+            width: 1300px;
+            height: 400px;
+            border-style: hidden;
+            background-image: url(charminar.gif);
+            background-size: 600px 400px;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        
+        .content {
+            width: 700px;
+            height: 400px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .location {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 12px;
+            color: blue;
+        }
+        
+        .img {
+            margin-left: 25px;
+        }
+        
+        .btnn {
+            width: 140px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-top: 40px;
+            cursor: pointer;
+            border-color: blue;
+            color: blue;
+            border-radius: 10px;
+            background-color: white;
+            outline: none;
+        }
+        
+        .btnn:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .trip {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotels {
+            width: 1340px;
+            height: auto;
+            border-style: hidden;
+        }
+        
+        .Hotel_one {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel1.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_content {
+            width: 380px;
+            height: 200px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .dealbtn {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 160px;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            outline: none;
+            border-style: hidden;
+        }
+        
+        .Hotel_Two {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_Three {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel3.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_four {
+            width: 700px;
+            color: var(--secondary-color);
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel4.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+        
+        .Hotel_five {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel5.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_six {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(hotel6.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .map {
+            border-style: groove;
+            float: right;
+        }
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 65px;
+            margin-right: 40px;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/Home/Home.html ">HOME</a>
+
+        </div>
+        <div class="slides">
+            <div class="content">
+
+                <h1 style="margin-left: 20px; font-size: 50px; color: var(--secondary-color); margin-top: 0%;"><b>Charminar</b>
+                </h1>
+                <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px" class="img">
+                <a href="https://goo.gl/maps/JwqBs15kv661Z1J47" class="location">Hyderabad | </a>
+                <a href="https://goo.gl/maps/XWUmURqVnqrimhzJA" class="location">Telangana | </a>
+                <a href="https://goo.gl/maps/HEdg6wTZEL2KFXeA8" class="location">India</a><br>
+
+                <button type="button" class="btnn" onclick="window.location='#navigateHere'" ;>View Hotels</button>
+                <div class="trip">
+                    <p><b>Best time to Visit : </b>Sep-Mar</p>
+                    <p><b>Ideal duration:</b> 2-4 days</p>
+
+                </div>
+            </div>
+        </div>
+       
+        <div class="Hotels">
+
+            <h1 style="margin-left: 50px; margin-top: 20px; font-size: 50px;" id="navigateHere"><b>Hotels</b></h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZqY15yRQINU6zHrmY-ufjYyRMB9JhP--" width="560" height="1450" class="map"></iframe>
+            <div class="Hotel_one">
+                <div class="Hotel_content">
+                    <h2>OYO 17168Hz Lodge</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/3cf5AqZEmut2qj2t9" class="location" style="font-size: 20px;">0.2km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,236</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/searchresults.en-gb.html?aid=344371;label=metatrivago-hotel-4321988_xqdz-2ee4dd_los-1_nrm-1_gstadt-2_gstkid-0_curr-inr_lang-en_mcid-10_dev-dsk_losb-1_bw-3_bwb-2_pg-0_trvbm-a_defdate-1_tstar-0_trat-0_tprc-0_tamnt-0_trvref-94225bee-5776-4e40-a170-7bc97d3fcca0;sid=0a9bd0c748c1604d4dd08aad992bb9eb;checkin=2021-05-02;checkout=2021-05-03;city=-2097701;highlighted_hotels=4321988;hlrd=with_dates;keep_landing=1;redirected=1;selected_currency=INR;show_room=432198803_284915926_2_0_0;source=hotel;trv_curr=INR;trv_dp=1487&utm_campaign=in&utm_content=los-1_nrm-1_gstadt-2_gstkid-0_curr-inr_lang-en_mcid-10_dev-dsk_losb-1_bw-3_bwb-2_pg-0_trvbm-a_defdate-1_tstar-0_trat-0_tprc-0_tamnt-0_trvref-94225bee-5776-4e40-a170-7bc97d3fcca0&utm_medium=meta&utm_source=metatrivago&utm_term=hotel-4321988&room1=A,A,;')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Two">
+                <div class="Hotel_content">
+                    <h2>Taj Falaknuma Palace,Hyderabad</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/FPLoMzpuyUTFD3kP6" class="location" style="font-size: 20px;">2.5km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹24,780</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.goibibo.com/hotels/meta/trivago/2162254155836171767/3760861888567722309/%7B%22ci%22%3A%2220210502%22%2C%22co%22%3A%2220210503%22%2C%22r%22%3A%221-2-0%22%2C%22qd%22%3A%2220210502-20210503-1-2-0%22%7D/?hquery=%7B%22ci%22%3A%2220210502%22%2C%22co%22%3A%2220210503%22%2C%22r%22%3A%221-2-0%22%2C%22qd%22%3A%2220210502-20210503-1-2-0%22%7D&utm_source=Meta&utm_medium=Trivago_DH&utm_campaign=3760861888567722309|DH|2&vendor=gds&p=19470.0&c=INR&ttt=3&tttb=2&los=1&losb=1&trv_reference=9ff98e0d-0b74-4ce1-9917-deb08033d23d')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Three">
+                <div class="Hotel_content">
+                    <h2>Hotel Aditya Hometel</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/AQZeTC1yq3dzHwAt5" class="location" style="font-size: 20px;">2.9km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,325</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.agoda.com/en-in/search?cid=1763317&currency=INR&checkin=2021-05-02&checkout=2021-05-03&NumberofAdults=2&NumberofChildren=0&Rooms=1&mcid=332&a2a=00&booking_source=0&trv_curr=INR&trv_dp=1273&trv_ttt=3&trv_tttb=2&trv_los=1&trv_losb=1&trv_pg=0&trv_defdate=1&tag=ce0ef04a-458b-4d02-a364-8127c200f073&sl=0&mobpf=0&tchash=TmFCaKsAjfM&hidef=001111&ccallout=1&selectedproperty=284722&city=8801&adults=2&children=0&hc=INR&los=1')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_four">
+                <div class="Hotel_content">
+                    <h2>FabHotel Deccan Heritage Abids</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/VRuShU3quvjcdmaY7" class="location" style="font-size: 20px;">2.9km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,723</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.agoda.com/en-in/search?cid=1763317&currency=INR&checkin=2021-05-02&checkout=2021-05-03&NumberofAdults=2&NumberofChildren=0&Rooms=1&mcid=3038&a2a=00&booking_source=0&trv_curr=INR&trv_dp=1723&trv_ttt=3&trv_tttb=2&trv_los=1&trv_losb=1&trv_pg=0&trv_defdate=1&tag=ea6921e7-ff54-43fa-ac38-be9c709cd73a&sl=0&mobpf=0&tchash=4dR%2Ft4PQUkE&hidef=001111&ccallout=1&selectedproperty=12259621&city=8801&adults=2&children=0&hc=INR&los=1')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_five">
+                <div class="Hotel_content">
+                    <h2>Rajdhani</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/tsgzLcQxd1mZHDek7" class="location" style="font-size: 20px;">1.6km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹5,600</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/searchresults.en-gb.html?aid=344371;label=metatrivago-hotel-6896038_xqdz-2ee4dd_los-1_nrm-1_gstadt-2_gstkid-0_curr-inr_lang-en_mcid-10_dev-dsk_losb-1_bw-3_bwb-2_pg-1_trvbm-a_defdate-1_tstar-0_trat-0_tprc-0_tamnt-0_trvref-ceeeacbd-660d-4d1d-a661-4c7ab0c3b415;sid=0a9bd0c748c1604d4dd08aad992bb9eb;checkin=2021-05-02;checkout=2021-05-03;city=-2097701;highlighted_hotels=6896038;hlrd=with_dates;keep_landing=1;redirected=1;selected_currency=INR;show_room=689603801_279804509_0_0_0;source=hotel;trv_curr=INR;trv_dp=5600&utm_campaign=in&utm_content=los-1_nrm-1_gstadt-2_gstkid-0_curr-inr_lang-en_mcid-10_dev-dsk_losb-1_bw-3_bwb-2_pg-1_trvbm-a_defdate-1_tstar-0_trat-0_tprc-0_tamnt-0_trvref-ceeeacbd-660d-4d1d-a661-4c7ab0c3b415&utm_medium=meta&utm_source=metatrivago&utm_term=hotel-6896038&room1=A,A,;')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_six">
+                <div class="Hotel_content">
+                    <h2>Hotel Royalton</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/EB2XD38dhR8mhGe49" class="location" style="font-size: 20px;">3.5km from charminar </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,857</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.agoda.com/en-in/search?cid=1763317&currency=INR&checkin=2021-05-02&checkout=2021-05-03&NumberofAdults=2&NumberofChildren=0&Rooms=1&mcid=332&a2a=00&booking_source=0&trv_curr=INR&trv_dp=1857&trv_ttt=3&trv_tttb=2&trv_los=1&trv_losb=1&trv_pg=0&trv_defdate=1&tag=7a4df8e6-9538-41d8-a80f-f4938629c194&sl=0&mobpf=0&tchash=4dR%2Ft4PQUkE&hidef=001111&ccallout=1&selectedproperty=186766&city=8801&adults=2&children=0&hc=INR&los=1')">View Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+<html>
+
+<head>
+    <title>Hussain Sagar</title>
+    <style>
+        .page {
+            width: 1340px;
+            height: 2160px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .head {
+            width: 1340px;
+            height: 180px;
+            border-style: hidden;
+            background-size: 500px 180px;
+        }
+        
+        .head a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        
+        .head a:hover {
+            color: blue;
+        }
+        
+        .slides {
+            width: 1300px;
+            height: 400px;
+            border-style: hidden;
+            background-image: url(sagarslides.gif);
+            background-size: 600px 400px;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        
+        .content {
+            width: 700px;
+            height: 400px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .location {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 12px;
+            color: blue;
+        }
+        
+        .img {
+            margin-left: 25px;
+        }
+        
+        .btnn {
+            width: 140px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-top: 40px;
+            cursor: pointer;
+            border-color: blue;
+            color: blue;
+            border-radius: 10px;
+            background-color: white;
+            outline: none;
+        }
+        
+        .btnn:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .trip {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotels {
+            width: 1340px;
+            height: auto;
+            border-style: hidden;
+        }
+        
+        .Hotel_one {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel1.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_content {
+            width: 380px;
+            height: 200px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .dealbtn {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 160px;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            outline: none;
+            border-style: hidden;
+        }
+        
+        .Hotel_Two {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_Three {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel3.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_four {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel4.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_five {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel5.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_six {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(sagarhotel6.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .map {
+            border-style: groove;
+            float: right;
+        }
+        
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: white;
+        }
+        
+        #login-form {
+            display: none;
+        }
+        
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: absolute;
+            margin-left: 480px;
+            margin-top: -530px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 5px 5px #333ff3;
+            border-radius: 30px;
+        }
+        
+        .toggle-btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+        
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient( blue, #333ff3);
+            border-radius: 30px;
+            transition: .5s;
+        }
+        
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient( blue, #333ff3);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+        }
+        
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+        
+        span {
+            color: #777;
+            font-size: 15px;
+            bottom: 68px;
+            position: absolute;
+        }
+        
+        #login {
+            left: 50px;
+        }
+        
+        #login input {
+            color: white;
+            font-size: 15;
+        }
+        
+        #register {
+            left: 450px;
+        }
+        
+        #register input {
+            color: white;
+            font-size: 15;
+        }
+        
+        .eye {
+            cursor: pointer;
+            color: #999;
+            font-size: 20px;
+            margin-bottom: 58px;
+            margin-left: -20px;
+            position: absolute;
+        }
+        
+        #hide1 {
+            display: none;
+        }
+        
+        .error-text {
+            color: red;
+            display: none;
+        }
+        
+        .wrong {
+            color: red;
+            margin-left: 30px;
+            margin-bottom: -30px;
+            display: none;
+        }
+        
+        .messages {
+            color: red;
+            display: none;
+        }
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 65px;
+            margin-right: 40px;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <!-- <a href="#" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">LOGIN</a> -->
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/Home/Home.html ">HOME</a>
+
+        </div>
+        <div class="slides">
+            <div class="content">
+
+                <h1 style="margin-left: 20px; font-size: 50px; color: var(--secondary-color); margin-top: 0%;"><b>Hussain Sagar</b>
+                </h1>
+                <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px" class="img">
+                <a href="https://goo.gl/maps/EDnoxSaoxkGVBwRg7" class="location">Hyderabad | </a>
+                <a href="https://goo.gl/maps/XWUmURqVnqrimhzJA" class="location">Telangana | </a>
+                <a href="https://goo.gl/maps/HEdg6wTZEL2KFXeA8" class="location">India</a><br>
+
+                <button type="button" class="btnn" onclick="window.location='#navigateHere'" ;>View Hotels</button>
+                <div class="trip">
+                    <p><b>Best time to Visit : </b>Nov-Feb</p>
+                    <p><b>Best time of the day : </b> 5:00pm to 7:00pm</p>
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="Hotels">
+
+            <h1 style="margin-left: 50px; margin-top: 20px; font-size: 50px;" id="navigateHere"><b>Hotels</b></h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sRVvTQqfoACv7etwYMj1JampDiskm771" width="560" height="1450" class="map"></iframe>
+            <div class="Hotel_one">
+                <div class="Hotel_content">
+                    <h2>Courtyard by Mariott Hyderabad</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/k4k3oyEZU2gmsy9o6" class="location" style="font-size: 20px;">1.5km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,500</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/courtyard-marriott.en-gb.html?aid=339464;label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar;sid=0a9bd0c748c1604d4dd08aad992bb9eb')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Two">
+                <div class="Hotel_content">
+                    <h2>Taj Deccan</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/zygpbckLwZxF13XSA" class="location" style="font-size: 20px;">2.6km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹3,000</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/taj-deccan.en-gb.html?aid=339464;label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar;sid=0a9bd0c748c1604d4dd08aad992bb9eb')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Three">
+                <div class="Hotel_content">
+                    <h2>Anjani Manison</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/3JS3mGAGJm32b6ds7" class="location" style="font-size: 20px;">1.6km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,472</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/anjani-mansion-hyderabad.en-gb.html?aid=339464;label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar;sid=0a9bd0c748c1604d4dd08aad992bb9eb')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_four">
+                <div class="Hotel_content">
+                    <h2>Hyatt Place Hyderabad,Banjara Hills</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/VRuShU3quvjcdmaY7" class="location" style="font-size: 20px;">2.8km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹3,439</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/hyatt-place-hyderabad-banjara-hills.en-gb.html?aid=339464;label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar;sid=0a9bd0c748c1604d4dd08aad992bb9eb;dest_id=264710;dest_type=landmark;dist=0;group_adults=2;group_children=0;hapos=8;hpos=8;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1620322872;srpvid=38a47c5cbf6201e9;type=total;ucfs=1&#hotelTmpl')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_five">
+                <div class="Hotel_content">
+                    <h2>The Park Hyderabad</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://g.page/HyattPlaceHyderabad?share" class="location" style="font-size: 20px;">1.2km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,018</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/the-park-hyderabad.en-gb.html?aid=339464;label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar;sid=0a9bd0c748c1604d4dd08aad992bb9eb;dest_id=264710;dest_type=landmark;dist=0;group_adults=2;group_children=0;hapos=5;hpos=5;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1620322576;srpvid=fe437bc8557a002c;type=total;ucfs=1&#hotelTmpl')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_six">
+                <div class="Hotel_content">
+                    <h2>Vivanta Hyderabad,Begumpet</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://g.page/VivantaHyderabad?share" class="location" style="font-size: 20px;">2.6km from Hussain Sagar Lake </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹3,584</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.booking.com/hotel/in/vivanta-by-taj-begumpet.en-gb.html?aid=339464&label=msn-Q7s1pTDQtVF28E9Q1nf%2AOQ-15771222144%3Atikwd-80333212768457%3Aaud-807859093%3Aloc-90%3Aneo%3Amte%3Adec%3Aqshotels%20near%20hussain%20sagar&sid=0a9bd0c748c1604d4dd08aad992bb9eb&dest_id=264710&dest_type=landmark&group_adults=2&group_children=0&hapos=10&hpos=10&no_rooms=1&sr_order=popularity&srepoch=1620322933&srpvid=d6097c7adcef00f5&ucfs=1&from=searchresults;highlight_room=#hotelTmpl')">View Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

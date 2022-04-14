@@ -1,0 +1,503 @@
+<html>
+
+<head>
+    <title>Thousand Pillar Temple</title>
+    <style>
+        .page {
+            width: 1340px;
+            height: 2160px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .head {
+            width: 1340px;
+            height: 180px;
+            border-style: hidden;
+            background-size: 500px 180px;
+        }
+        
+        .head a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        
+        .head a:hover {
+            color: blue;
+        }
+        
+        .slides {
+            width: 1300px;
+            height: 400px;
+            border-style: hidden;
+            background-image: url(templeslides.gif);
+            background-size: 600px 400px;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        
+        .content {
+            width: 700px;
+            height: 400px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .location {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 12px;
+            color: blue;
+        }
+        
+        .img {
+            margin-left: 25px;
+        }
+        
+        .btnn {
+            width: 140px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-top: 40px;
+            cursor: pointer;
+            border-color: blue;
+            color: blue;
+            border-radius: 10px;
+            background-color: white;
+            outline: none;
+        }
+        
+        .btnn:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .trip {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotels {
+            width: 1340px;
+            height: auto;
+            border-style: hidden;
+        }
+        
+        .Hotel_one {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel1.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_content {
+            width: 380px;
+            height: 200px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .dealbtn {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 160px;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            outline: none;
+            border-style: hidden;
+        }
+        
+        .Hotel_Two {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_Three {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel3.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_four {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel4.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_five {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel5.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_six {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(templehotel6.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .map {
+            border-style: groove;
+            float: right;
+        }
+        
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: white;
+        }
+        
+        #login-form {
+            display: none;
+        }
+        
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: absolute;
+            margin-left: 480px;
+            margin-top: -530px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 5px 5px #333ff3;
+            border-radius: 30px;
+        }
+        
+        .toggle-btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+        
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient( blue, #333ff3);
+            border-radius: 30px;
+            transition: .5s;
+        }
+        
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            background: transparent;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient( blue, #333ff3);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+        }
+        
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+        
+        span {
+            color: #777;
+            font-size: 15px;
+            bottom: 68px;
+            position: absolute;
+        }
+        
+        #login {
+            left: 50px;
+        }
+        
+        #login input {
+            color: white;
+            font-size: 15;
+        }
+        
+        #register {
+            left: 450px;
+        }
+        
+        #register input {
+            color: white;
+            font-size: 15;
+        }
+        
+        .eye {
+            cursor: pointer;
+            color: #999;
+            font-size: 20px;
+            margin-bottom: 58px;
+            margin-left: -20px;
+            position: absolute;
+        }
+        
+        #hide1 {
+            display: none;
+        }
+        
+        .error-text {
+            color: red;
+            display: none;
+        }
+        
+        .wrong {
+            color: red;
+            margin-left: 30px;
+            margin-bottom: -30px;
+            display: none;
+        }
+        
+        .messages {
+            color: red;
+            display: none;
+        }
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 65px;
+            margin-right: 40px;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <!-- <a href="#" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">LOGIN</a> -->
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/Home/Home.html ">HOME</a>
+
+        </div>
+        <div class="slides">
+            <div class="content">
+
+                <h1 style="margin-left: 20px; font-size: 50px; color: var(--secondary-color); margin-top: 0%;"><b>Thousand Pillar Temple</b>
+                </h1>
+                <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px" class="img">
+                <a href="https://goo.gl/maps/oHPTSRVi5XxGo2GW7" class="location">Hyderabad | </a>
+                <a href="https://goo.gl/maps/XWUmURqVnqrimhzJA" class="location">Telangana | </a>
+                <a href="https://goo.gl/maps/HEdg6wTZEL2KFXeA8" class="location">India</a><br>
+
+                <button type="button" class="btnn" onclick="window.location='#navigateHere'" ;>View Hotels</button>
+                <div class="trip">
+                    <p><b>Best time to Visit : </b>Oct-Mar</p>
+                    <p><b>Opens at:</b> 5:00pm <b>and closes at</b> 7:00pm</p>
+
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="Hotels">
+
+            <h1 style="margin-left: 50px; margin-top: 20px; font-size: 50px;" id="navigateHere"><b>Hotels</b></h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1N6uL6AfN2ZhgOH72LdlWVE0_3rTs9AHb" width="560" height="1450" class="map"></iframe>
+            <div class="Hotel_one">
+                <div class="Hotel_content">
+                    <h2>OYO 11938 Mitra Residency</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/tfB9JLrPvz6HugCp6" class="location" style="font-size: 20px;">2.1km from Temple </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,485</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g735768-d10183303-Reviews-OYO_11938_Mitra_Residency-Warangal_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Two">
+                <div class="Hotel_content">
+                    <h2>Spot on 67642 Sindhu Lodge</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/W1NpKk2Ci9KVpvAv5" class="location" style="font-size: 20px;">0.5 from Temple</a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,527</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g20404693-d21355808-Reviews-SPOT_ON_67642_Sindhu_Lodge-Hanamkonda_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Three">
+                <div class="Hotel_content">
+                    <h2>OYO 37003 Hotel Shreshta Inn</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/jcPxNUh3Y8rp5bVw9" class="location" style="font-size: 20px;">0.7km from Temple </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹3,224</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g735768-d20809184-Reviews-OYO_37003_Hotel_Shreshta_Inn-Warangal_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_four">
+                <div class="Hotel_content">
+                    <h2>Spot on 75785 Hotel Star Inn</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/cMyWzWnvtFGXuP8v7" class="location" style="font-size: 20px;">0.8km from Temple </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,171</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g20404693-d21510421-Reviews-SPOT_ON_75785_Hotel_Star_Inn-Hanamkonda_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_five">
+                <div class="Hotel_content">
+                    <h2>OYO 17316 Radika Residency</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/KEAiUMgvJWvGDxey7" class="location" style="font-size: 20px;">0.5km from Temple </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,053</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g735768-d17564045-Reviews-OYO_17316_Radika_Residency-Warangal_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_six">
+                <div class="Hotel_content">
+                    <h2>Hotel Prime Inn</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://g.page/hotel-prime-inn?share" class="location" style="font-size: 20px;">4.2km from Temple </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,234</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g735768-d23151587-Reviews-Hotel_Prime_Inn-Warangal_Warangal_Urban_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   
+   
+  
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<html>
+
+<head>
+    <title>Golconda</title>
+    <style>
+        .page {
+            width: 1340px;
+            height: 2160px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .head {
+            width: 1340px;
+            height: 180px;
+            border-style: hidden;
+        }
+        
+        .head a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        
+        .head a:hover {
+            color: blue;
+        }
+        
+        .slides {
+            width: 1300px;
+            height: 400px;
+            border-style: hidden;
+            background-image: url(golslides.gif);
+            background-size: 600px 400px;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        
+        .content {
+            width: 700px;
+            height: 400px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .location {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 12px;
+            color: blue;
+        }
+        
+        .img {
+            margin-left: 25px;
+        }
+        
+        .btnn {
+            width: 140px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-top: 40px;
+            cursor: pointer;
+            border-color: blue;
+            color: blue;
+            border-radius: 10px;
+            background-color: white;
+        }
+        
+        .btnn:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .trip {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .formbox {
+            width: 400px;
+            height: 500px;
+            border-style: hidden;
+            margin: -120px 480px;
+            position: absolute;
+            overflow: hidden;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .loginform {
+            width: 360px;
+            height: 350px;
+            margin-left: 20px;
+            margin-top: 90px;
+            position: absolute;
+            outline: none;
+            border-style: hidden;
+            color: white;
+        }
+        
+        .login {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+            margin: 15px 10px 10px 30px;
+            border-style: hidden;
+            outline: none;
+        }
+        
+        .checkbox {
+            width: 25px;
+            height: 16px;
+            margin-top: 20px;
+            color: white;
+        }
+        
+        .link {
+            text-decoration: none;
+            margin-left: 90px;
+            color: white;
+        }
+        
+        .button {
+            border-radius: 25px;
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-left: 80px;
+            margin-top: 50px;
+            cursor: pointer;
+            background: linear-gradient( blue, #333ff3);
+            outline: none;
+            border-style: hidden;
+            color: white;
+        }
+        
+        .no {
+            margin-top: 60px;
+            margin-left: 75px;
+        }
+        
+        .signupform {
+            width: 360px;
+            height: 380px;
+            margin-left: 20px;
+            margin-top: 90px;
+            position: absolute;
+            left: 420px;
+        }
+        
+        .signup {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+            margin: 15px 10px 10px 30px;
+            border-style: hidden;
+        }
+        
+        .place {
+            width: 130px;
+            height: 30px;
+            margin-left: 30px;
+            font-size: 15px;
+        }
+        
+        .toggle {
+            width: 220px;
+            height: 40px;
+            margin-left: 100px;
+            margin-top: 40px;
+            position: relative;
+            border-radius: 30px;
+            border-style: hidden;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .tog {
+            width: 105px;
+            height: 40px;
+            cursor: pointer;
+            outline: none;
+            background: transparent;
+            position: relative;
+            border-style: hidden;
+            font-size: 20px;
+            color: white;
+        }
+        
+        #btn {
+            position: absolute;
+            width: 110px;
+            border-radius: 30px;
+            height: 100%;
+            background: linear-gradient( blue, #333ff3);
+            transition: 0.5s;
+        }
+        
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: white;
+        }
+        
+        .Hotels {
+            width: 1340px;
+            height: auto;
+            border-style: hidden;
+        }
+        
+        .Hotel_one {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(golhotel1.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_content {
+            width: 380px;
+            height: 200px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .dealbtn {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 160px;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            outline: none;
+            border-style: hidden;
+        }
+        
+        .Hotel_Two {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(golhotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_Three {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(golhotel3.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_four {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Charminar/hotel4.gif');
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_five {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Charminar/hotel5.gif');
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_six {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Charminar/hotel6.gif');
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .map {
+            border-style: groove;
+            float: right;
+        }
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 65px;
+            margin-right: 40px;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/Home/Home.html ">HOME</a>
+
+        </div>
+        <div class="slides">
+            <div class="content">
+
+                <h1 style="margin-left: 20px; font-size: 50px;  color: var(--secondary-color); margin-top: 0%;"><b>Golconda</b>
+                </h1>
+                <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px" class="img">
+                <a href="https://goo.gl/maps/yvhX5gEfnoXNGTw99" class="location">Hyderabad | </a>
+                <a href="https://goo.gl/maps/XWUmURqVnqrimhzJA" class="location">Telangana | </a>
+                <a href="https://goo.gl/maps/HEdg6wTZEL2KFXeA8" class="location">India</a><br>
+                <button type="button" class="btnn" onclick="window.location='#navigateHere'">View Hotels</button>
+                <div class="trip">
+                    <p><b>Best time to Visit : </b>Sep-Mar</p>
+                    <p><b>Ideal duration:</b> 2-4 days</p>
+                </div>
+            </div>
+        </div>
+        <div class="Hotels">
+
+            <h1 style="margin-left: 50px; margin-top: 20px; font-size: 50px;" id="navigateHere"><b>Hotels</b></h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1n67VFOBf5g3xn2emRfdoxP9zLhRQa0gY" width="560" height="1450" class="map"></iframe>
+            <div class="Hotel_one">
+                <div class="Hotel_content">
+                    <h2>OYO Flagship 30254 Neknampur </h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/3cf5AqZEmut2qj2t9" class="location" style="font-size: 20px;">3.8km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,432</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=201903191143492870&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.39296&lng=78.37784&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=2&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Two">
+                <div class="Hotel_content">
+                    <h2>AURUM ABODES</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/FPLoMzpuyUTFD3kP6" class="location" style="font-size: 20px;">3.6km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,230</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=201707120621226806&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.40051&lng=78.38783&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=7&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Three">
+                <div class="Hotel_content">
+                    <h2>OYO Townhouse 357 Malikarjuna Residency Gachibowli</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/AQZeTC1yq3dzHwAt5" class="location" style="font-size: 20px;">4km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,413</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=201809041947339498&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.40865&lng=78.39034&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=3&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_four">
+                <div class="Hotel_content">
+                    <h2>OYO Home 33412 Glaring Stay</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/VRuShU3quvjcdmaY7" class="location" style="font-size: 20px;">3.3km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,132</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=201904051917129744&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.39587&lng=78.38316&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=4&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_five">
+                <div class="Hotel_content">
+                    <h2>OYO Home 33411 Royal Stay</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/tsgzLcQxd1mZHDek7" class="location" style="font-size: 20px;">3.3km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹709</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=201904051917124149&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.39587&lng=78.38316&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=5&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_six">
+                <div class="Hotel_content">
+                    <h2>OYO Home 79783 Hotel Fort Inn</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/EB2XD38dhR8mhGe49" class="location" style="font-size: 20px;">4.5km from Golconda Fort </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹680</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.makemytrip.com/hotels/hotel-details/?hotelId=202008141046156361&mtkeys=defaultMtkey&_uCurrency=INR&checkin=05162021&checkout=05172021&city=CTHYDERA&cmp=SEO&country=IN&lat=17.36452&lng=78.39168&locusId=CTHYDERA&locusType=city&mmPoiTag=POI%7CGolconda%20Fort%7CPOI52982%7C17.383309%7C78.4010528&modifyDates=true&rank=6&roomStayQualifier=1e0e&searchText=Golconda%20Fort%2C%20Hyderabad&seoReq=1619014688386')">View Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+   
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

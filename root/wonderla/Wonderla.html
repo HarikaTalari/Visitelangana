@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <title>Wonderla</title>
+    <style>
+        .page {
+            width: 1340px;
+            height: 2160px;
+            border-style: hidden;
+            background: var(--primary-color);
+        }
+        
+        .head {
+            width: 1340px;
+            height: 180px;
+            border-style: hidden;
+          
+        }
+        
+        .head a {
+            text-decoration: none;
+            font-size: 30px;
+            float: right;
+            margin-right: 50px;
+            padding: 6px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 60px;
+        }
+        
+        .head a:hover {
+            color: blue;
+        }
+        
+        .slides {
+            width: 1300px;
+            height: 400px;
+            border-style: hidden;
+            background-image: url(wonderslides.gif);
+            background-size: 600px 400px;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        
+        .content {
+            width: 700px;
+            height: 400px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .location {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 12px;
+            color: blue;
+        }
+        
+        .img {
+            margin-left: 25px;
+        }
+        
+        .btnn {
+            width: 140px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-top: 40px;
+            cursor: pointer;
+            border-color: blue;
+            color: blue;
+            border-radius: 10px;
+            background-color: white;
+            outline: none;
+        }
+        
+        .btnn:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .trip {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotels {
+            width: 1340px;
+            height: auto;
+            border-style: hidden;
+        }
+        
+        .Hotel_one {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(wonderhotel1.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_content {
+            width: 380px;
+            height: 200px;
+            border-style: hidden;
+            float: right;
+        }
+        
+        .dealbtn {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -70px;
+            margin-left: 160px;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            border-radius: 10px;
+            outline: none;
+            border-style: hidden;
+        }
+        
+        .Hotel_Two {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(wonderhotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_Three {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Charminar/hotel2.gif');
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_four {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(wonderhotel4.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_five {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(wonderhotel5.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .Hotel_six {
+            width: 700px;
+            height: 200px;
+            box-shadow: 5px 5px 5px;
+            margin: 20px 0 0 40px;
+            background-image: url(wonderhotel2.gif);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .map {
+            border-style: groove;
+            float: right;
+        }
+        
+      
+        
+        
+         :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+        
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+        
+        #icon {
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+            float: right;
+            margin-top: 65px;
+            margin-right: 40px;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/icon.gif');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        
+        .log {
+            width: 500px;
+            height: 180px;
+            border-style: hidden;
+            position: absolute;
+            background-image: url('C:/Users/delll/Desktop/Mini Project2/root/Icons/logo.jpg');
+            background-repeat: no-repeat;
+            background-size: 280px 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head">
+            <div class="logo">
+                <div class="log"></div>
+            </div>
+            <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg" id="icon">
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/About/about.html">ABOUT</a>
+            <!-- <a href="#" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">LOGIN</a> -->
+            <a href="C:/Users/delll/Desktop/Mini Project2/root/Home/Home.html ">HOME</a>
+
+        </div>
+        <div class="slides">
+            <div class="content">
+
+                <h1 style="margin-left: 20px; font-size: 50px; color:var(--secondary-color); margin-top: 0%;"><b>Wonderla</b>
+                </h1>
+                <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px" class="img">
+                <a href="https://goo.gl/maps/frNSzuFw1Uo8zFVW6" class="location">Hyderabad | </a>
+                <a href="https://goo.gl/maps/XWUmURqVnqrimhzJA" class="location">Telangana | </a>
+                <a href="https://goo.gl/maps/HEdg6wTZEL2KFXeA8" class="location">India</a><br>
+
+                <button type="button" class="btnn" onclick="window.location='#navigateHere'" ;>View Hotels</button>
+                <div class="trip">
+                    <p><b>Best Time to visit:</b>March to June</p>
+                    <p><b>Opens at</b> 11:00am <b>and closes at </b>7:00pm</p>
+
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="Hotels">
+
+            <h1 style="margin-left: 50px; margin-top: 20px; font-size: 50px;" id="navigateHere"><b>Hotels</b></h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17w22iQE_OWi-4TPkGaLnh_46fXz5PrDa" width="560" height="1450" class="map"></iframe>
+            <div class="Hotel_one">
+                <div class="Hotel_content">
+                    <h2>Novotel Hyderabad Airport</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://g.page/Novotelhydairport?share" class="location" style="font-size: 20px;">8.4km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹9,440</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g297586-d1148813-Reviews-Novotel_Hyderabad_Airport-Hyderabad_Hyderabad_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Two">
+                <div class="Hotel_content">
+                    <h2>Oyster Airport Hotel</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/rDXxE4VSmb7uZCFD7" class="location" style="font-size: 20px;">10.9km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,098</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g297586-d3522240-Reviews-Oyster_Airport_Hotel-Hyderabad_Hyderabad_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_Three">
+                <div class="Hotel_content">
+                    <h2>Taj Falaknuma Palace,Hyderabad</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/FPLoMzpuyUTFD3kP6" class="location" style="font-size: 20px;">14.4km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹25,960</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.goibibo.com/hotels/meta/trivago/2162254155836171767/3760861888567722309/%7B%22ci%22%3A%2220210502%22%2C%22co%22%3A%2220210503%22%2C%22r%22%3A%221-2-0%22%2C%22qd%22%3A%2220210502-20210503-1-2-0%22%7D/?hquery=%7B%22ci%22%3A%2220210502%22%2C%22co%22%3A%2220210503%22%2C%22r%22%3A%221-2-0%22%2C%22qd%22%3A%2220210502-20210503-1-2-0%22%7D&utm_source=Meta&utm_medium=Trivago_DH&utm_campaign=3760861888567722309|DH|2&vendor=gds&p=19470.0&c=INR&ttt=3&tttb=2&los=1&losb=1&trv_reference=9ff98e0d-0b74-4ce1-9917-deb08033d23d')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_four">
+                <div class="Hotel_content">
+                    <h2>Capital O 24450 Hotel Surabhi</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/rhLTfMMnRRdp23Au6" class="location" style="font-size: 20px;">14.3km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹1,242</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g297586-d15081419-Reviews-Capital_O_24450_Hotel_Surabhi-Hyderabad_Hyderabad_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_five">
+                <div class="Hotel_content">
+                    <h2>Hotel Nakshtra Grand</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://goo.gl/maps/4XuzPwiVXixJp2g17" class="location" style="font-size: 20px;">14.5km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹2,016</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g297586-d16811816-Reviews-Nakshatra_Grand-Hyderabad_Hyderabad_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+            <div class="Hotel_six">
+                <div class="Hotel_content">
+                    <h2>Hotel Rainbow Tower Airport Rd</h2>
+                    <img src="C:/Users/delll/Desktop/Mini Project2/root/Icons/location.jpg" alt="image" width="30px" height="30px">
+                    <a href="https://g.page/hotel-rainbow-tower?share" class="location" style="font-size: 20px;">15.7km from Wonderla </a>
+                    <p style="font-size: 30px; color: green; margin-left: 25px; font-weight: bold;">₹3,629</p>
+                    <button type="button" class="dealbtn" onclick="window.open('https://www.tripadvisor.in/Hotel_Review-g297586-d19003311-Reviews-Hotel_Rainbow_Tower_Airport_Rd-Hyderabad_Hyderabad_District_Telangana.html')">View Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/sun.png";
+            } else {
+                icon.src = "C:/Users/delll/Desktop/Mini Project2/root/Icons/moon2.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>
